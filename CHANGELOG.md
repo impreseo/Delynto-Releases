@@ -17,6 +17,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - 2026-10-30 — Stability & Connectivity Update
+
+### Summary
+Comprehensive stability and connectivity restoration update for **Delynto** (Powered by **IMPRESEO LABS**), resolving automatic nearby-device discovery failures across Windows and Android, eliminating packet filtering bottlenecks, and reinforcing transfer safety bounds.
+
+---
+
+### Fixed & Enhanced
+
+#### 📡 Nearby Device Discovery Restoration
+- **Subnet-Directed Broadcast Calculation:** Implemented active calculation of `(ip | !netmask)` when operating systems (notably Windows and Android) return `None` for interface broadcast addresses, ensuring discovery datagrams reach local subnets across all network interfaces instead of silently dropping.
+- **Multicast Adapter Explicit Binding:** In addition to binding on `INADDR_ANY`, explicitly invoked `join_multicast_v4(MULTICAST_IPV4_ADDR, v4.ip)` across all active physical IPv4 adapters, overcoming Winsock routing table metric biases that previously prevented discovery on non-default adapters.
+- **Android Kernel Multicast Lock:** Integrated explicit `WifiManager.MulticastLock` acquisition and release lifecycle management in both `MainActivity` and `TransferForegroundService`, preventing Android's battery-saving driver filters from dropping incoming UDP discovery packets on port `53317`.
+- **Dynamic Peer State Notification:** Modified `record_device()` to emit real-time event updates when device candidates, pairing codes, session IDs, or addresses update, eliminating UI stagnation where discovered peers required an app restart to refresh.
+
+#### 🛡️ Transfer Stream Bounds & Memory Safety
+- **Chunk Stream Verification:** Added strict defensive assertions in `receiver.rs` verifying incoming chunk indices (`chunk_index < self.manifest.chunk_count`) and bounding chunk buffer allocations (`length <= 16 * 1024 * 1024`), mitigating memory exhaustion or panics from malformed packets.
+- **FFI JNI Version Alignment:** Harmonized native library version reporting (`relaymesh_version`) and JNI bindings to `"0.1.1"`.
+
+#### 📦 Distribution Artifacts
+- Fresh Windows NSIS Installer: `Delynto-0.1.1-Setup.exe` (11,638,974 bytes, SHA-256: `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`).
+- Verified Android APK: `Delynto-0.1.1.apk` (27,415,905 bytes, SHA-256: `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`).
+
+---
+
 ## [0.1.0] - 2026-10-30 — Public Beta
 
 ### Summary

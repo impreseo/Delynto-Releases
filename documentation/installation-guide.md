@@ -11,14 +11,14 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
 - Administrator privileges are **not required**; Delynto installs directly into the current user's profile.
 
 ### Step-by-Step Installation
-1. Download **`Delynto-0.1.0-Setup.exe`** from the [Delynto-Releases](https://github.com/impreseo/Delynto-Releases/releases/latest) repository.
+1. Download **`Delynto-0.1.1-Setup.exe`** from the [Delynto-Releases](https://github.com/impreseo/Delynto-Releases/releases/latest) repository.
 2. Verify the SHA-256 hash using PowerShell:
    ```powershell
-   Get-FileHash .\Delynto-0.1.0-Setup.exe -Algorithm SHA256
+   Get-FileHash .\Delynto-0.1.1-Setup.exe -Algorithm SHA256
    ```
    Ensure it matches:
-   `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0`
-3. Double-click `Delynto-0.1.0-Setup.exe`.
+   `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`
+3. Double-click `Delynto-0.1.1-Setup.exe`.
 4. **SmartScreen Warning Resolution:**  
    Because this initial public beta binary is open-source and unsigned (does not carry an expensive paid EV commercial certificate), Windows Defender SmartScreen may display:
    > *"Windows protected your PC — Microsoft Defender SmartScreen prevented an unrecognized app from starting."*
@@ -43,10 +43,10 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
 - ARM64 (`arm64-v8a`) or x86_64 device.
 
 ### Step-by-Step Installation
-1. Download **`Delynto-0.1.0.apk`** to your phone or tablet.
+1. Download **`Delynto-0.1.1.apk`** to your phone or tablet.
 2. Verify the SHA-256 hash in Termux or your terminal:
    ```bash
-   sha256sum Delynto-0.1.0.apk
+   sha256sum Delynto-0.1.1.apk
    ```
    Ensure it matches:
    `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`

@@ -8,7 +8,7 @@
 
 **Private • Zero-Cloud • High-Speed Device-to-Device File Transfer**
 
-[![Release](https://img.shields.io/badge/Release-v0.1.0--Beta-7661FF?style=for-the-badge&logo=github)](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.1.0)
+[![Release](https://img.shields.io/badge/Release-v0.1.1--Stability-7661FF?style=for-the-badge&logo=github)](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.1.1)
 [![Status](https://img.shields.io/badge/Status-Public%20Beta-00D1FF?style=for-the-badge)](https://github.com/impreseo/Delynto-Releases/releases/latest)
 [![Platform](https://img.shields.io/badge/Platforms-Windows%20%7C%20Android-10B981?style=for-the-badge)](documentation/system-requirements.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-38BDF8?style=for-the-badge)](LICENSE)
@@ -24,7 +24,7 @@
 
 <br/>
 
-## 📥 Official Downloads (v0.1.0 — Public Beta)
+## 📥 Official Downloads (v0.1.1 — Stability & Connectivity Update)
 
 Download the official production packages for your operating system. All downloads operate 100% offline and do not require account registration or cloud sign-in.
 
@@ -39,14 +39,14 @@ Download the official production packages for your operating system. All downloa
     <tr>
       <td align="center" valign="top">
         <br/>
-        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.0/Delynto-0.1.0-Setup.exe">
-          <img src="https://img.shields.io/badge/Download%20for%20Windows-Setup.exe%20(11.09%20MB)-7661FF?style=for-the-badge&logo=windows&logoColor=white" alt="Download Delynto for Windows" height="42" />
+        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/Delynto-0.1.1-Setup.exe">
+          <img src="https://img.shields.io/badge/Download%20for%20Windows-Setup.exe%20(11.10%20MB)-7661FF?style=for-the-badge&logo=windows&logoColor=white" alt="Download Delynto for Windows" height="42" />
         </a>
         <br/><br/>
-        <b>Package:</b> <code>Delynto-0.1.0-Setup.exe</code><br/>
-        <b>Version:</b> <code>v0.1.0</code> (Public Beta)<br/>
+        <b>Package:</b> <code>Delynto-0.1.1-Setup.exe</code><br/>
+        <b>Version:</b> <code>v0.1.1</code> (Stability & Connectivity Update)<br/>
         <b>Architecture:</b> <code>x86_64</code> (64-bit Intel / AMD)<br/>
-        <b>File Size:</b> 11,632,757 bytes (~11.09 MiB)<br/>
+        <b>File Size:</b> 11,638,974 bytes (~11.10 MiB)<br/>
         <b>Format:</b> NSIS Standalone Installer<br/>
         <b>Requirements:</b> Windows 10 (Build 19041+) or Windows 11<br/>
         <br/>
@@ -55,12 +55,12 @@ Download the official production packages for your operating system. All downloa
       </td>
       <td align="center" valign="top">
         <br/>
-        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.0/Delynto-0.1.0.apk">
+        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/Delynto-0.1.1.apk">
           <img src="https://img.shields.io/badge/Download%20for%20Android-APK%20(26.14%20MB)-00D1FF?style=for-the-badge&logo=android&logoColor=white" alt="Download Delynto for Android" height="42" />
         </a>
         <br/><br/>
-        <b>Package:</b> <code>Delynto-0.1.0.apk</code><br/>
-        <b>Version:</b> <code>v0.1.0</code> (Public Beta)<br/>
+        <b>Package:</b> <code>Delynto-0.1.1.apk</code><br/>
+        <b>Version:</b> <code>v0.1.1</code> (Stability & Connectivity Update)<br/>
         <b>Supported ABIs:</b> <code>arm64-v8a</code>, <code>x86_64</code><br/>
         <b>File Size:</b> 27,415,905 bytes (~26.14 MiB)<br/>
         <b>Format:</b> Android Application Package (APK)<br/>
@@ -78,17 +78,17 @@ Verify the cryptographic authenticity of your download prior to execution:
 
 | Binary Asset | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- |
-| **`Delynto-0.1.0-Setup.exe`** | 11,632,757 bytes | `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0` |
-| **`Delynto-0.1.0.apk`** | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
+| **`Delynto-0.1.1-Setup.exe`** | 11,638,974 bytes | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| **`Delynto-0.1.1.apk`** | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 
 ```powershell
 # Windows PowerShell
-Get-FileHash .\Delynto-0.1.0-Setup.exe -Algorithm SHA256
+Get-FileHash .\Delynto-0.1.1-Setup.exe -Algorithm SHA256
 ```
 
 ```bash
 # Linux / macOS / Android Termux
-sha256sum Delynto-0.1.0.apk
+sha256sum Delynto-0.1.1.apk
 # Or verify manifest
 sha256sum -c SHA256SUMS.txt
 ```
@@ -189,7 +189,7 @@ Every image below is a genuine, unedited capture of the active Delynto runtime o
 
 ## ⚡ Key Features
 
-| Capability | Supported in v0.1.0 Beta | Description |
+| Capability | Supported in v0.1.1 | Description |
 | :--- | :---: | :--- |
 | **Zero-Cloud Architecture** | ✅ Supported | All transfers operate strictly within your local network. Zero external servers or telemetry. |
 | **Wire-Speed QUIC Transport** | ✅ Supported | Multiplexed QUIC over UDP with TLS 1.3 encryption (Port `41820`), streaming at hardware limits. |
@@ -296,6 +296,6 @@ Comprehensive technical documentation, protocol specifications, and platform-spe
 ### **DELYNTO** is powered by **IMPRESEO LABS**
 *Copyright © 2026 IMPRESEO LABS. All rights reserved.*
 
-[Official Release](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.1.0) • [Source Code Repository](https://github.com/impreseo/Delynto) • [Report an Issue](https://github.com/impreseo/Delynto/issues) • [Documentation](documentation/README.md) • [Changelog](CHANGELOG.md)
+[Official Release](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.1.1) • [Source Code Repository](https://github.com/impreseo/Delynto) • [Report an Issue](https://github.com/impreseo/Delynto/issues) • [Documentation](documentation/README.md) • [Changelog](CHANGELOG.md)
 
 </div>

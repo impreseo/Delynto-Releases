@@ -1,7 +1,7 @@
 # Delynto — Technical & Product Documentation Index
 
 **Product:** Delynto  
-**Version:** `v0.1.0` (Public Beta)  
+**Version:** `v0.1.1` (Stability & Connectivity Update)  
 **Attribution:** Powered by **IMPRESEO LABS**  
 **Core Motto:** *JUST OPEN. DISCOVER. CONNECT. SHARE.*  
 **Visual Identity:** Pearl × Obsidian × Liquid Glass  

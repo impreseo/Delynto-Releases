@@ -6,12 +6,12 @@ To ensure your downloaded Delynto application packages have not been tampered wi
 
 ---
 
-## 🔒 Official SHA-256 Checksums
+## 🔒 Official SHA-256 Checksums (v0.1.1)
 
 | Package Filename | Target OS & Architecture | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- |
-| **`Delynto-0.1.0-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,632,757 bytes | `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0` |
-| **`Delynto-0.1.0.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
+| **`Delynto-0.1.1-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,638,974 bytes | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| **`Delynto-0.1.1.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 
 ---
 
@@ -21,15 +21,15 @@ To ensure your downloaded Delynto application packages have not been tampered wi
 Open PowerShell in the directory where your download is saved:
 
 ```powershell
-Get-FileHash .\Delynto-0.1.0-Setup.exe -Algorithm SHA256
+Get-FileHash .\Delynto-0.1.1-Setup.exe -Algorithm SHA256
 ```
 
 Compare the resulting `Hash` string with:
-`317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0`
+`2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`
 
 ### 2. Linux / macOS / Android Termux (Bash)
 ```bash
-sha256sum Delynto-0.1.0.apk
+sha256sum Delynto-0.1.1.apk
 ```
 
 Compare the output with:

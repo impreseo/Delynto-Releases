@@ -1,7 +1,7 @@
 # Delynto — Release Details & Build Metadata
 
 **Product:** Delynto  
-**Version:** `v0.1.0` (Public Beta)  
+**Version:** `v0.1.1` (Stability & Connectivity Update)  
 **Attribution:** Powered by **IMPRESEO LABS**  
 **Release Date:** October 30, 2026  
 **Primary Source Repository:** [https://github.com/impreseo/Delynto](https://github.com/impreseo/Delynto)  
@@ -13,8 +13,8 @@
 
 | Deliverable Artifact | Target OS | Architecture | Package Format | File Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`Delynto-0.1.0-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,632,757 bytes (~11.09 MiB) | `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0` |
-| **`Delynto-0.1.0.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
+| **`Delynto-0.1.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,638,974 bytes (~11.10 MiB) | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| **`Delynto-0.1.1.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 | **`SHA256SUMS.txt`** | All | Multi | Plain Text | 174 bytes | Manifest file containing cryptographic hashes |
 
 ---
@@ -22,10 +22,10 @@
 ## 🛠️ Build Environment
 
 - **Rust Compiler:** `rustc 1.85.0-nightly (56fb4db66 2024-12-08)` / stable compatible
-- **Tauri Toolchain:** Tauri v2.3+ (`@tauri-apps/cli`)
-- **Android Gradle Plugin (AGP):** 8.6.0
+- **Tauri Toolchain:** Tauri v2.12.4 (`@tauri-apps/cli`)
+- **Android Gradle Plugin (AGP):** 8.7.2
 - **Android NDK:** 27.2.12479018
-- **Android SDK:** API Level 34 (Upside Down Cake)
+- **Android SDK:** API Level 35
 - **Node.js Environment:** Node v20.x / Vite 6.4.5 / React 18
 
 ---
