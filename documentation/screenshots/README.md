@@ -35,3 +35,12 @@ This directory contains genuine user interface captures from the actual running 
 | **Android Settings** | Local folder configuration and Android device identity management. | *(Integrated in Settings Tab)* | Documented in Guide |
 
 *(Note: Per release integrity guidelines, only genuinely captured Android mobile screens are published; mockups or fabricated states were not generated).*
+
+---
+
+## 🎨 Official Brand & Product Identity
+
+| Asset | Description | File Path |
+| :--- | :--- | :--- |
+| **Official Delynto Logo** | High-resolution transparent brand emblem. | [`delynto-logo.png`](delynto-logo.png) |
+| **Official Application Icon** | 512×512 production application launcher icon. | [`delynto-icon.png`](delynto-icon.png) |

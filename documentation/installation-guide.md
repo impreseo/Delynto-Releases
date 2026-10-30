@@ -17,7 +17,7 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
    Get-FileHash .\Delynto-0.1.0-Setup.exe -Algorithm SHA256
    ```
    Ensure it matches:
-   `F8C47D9328FE30A138E9A1CB5CA8614E865B41EEC6648D4D58A14B089D3CE55E`
+   `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0`
 3. Double-click `Delynto-0.1.0-Setup.exe`.
 4. **SmartScreen Warning Resolution:**  
    Because this initial public beta binary is open-source and unsigned (does not carry an expensive paid EV commercial certificate), Windows Defender SmartScreen may display:
@@ -49,7 +49,7 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
    sha256sum Delynto-0.1.0.apk
    ```
    Ensure it matches:
-   `C0C1C1CFC3F1D96F9399225FEC338FAE3419D5EAC77DDDFB5CF05A75E9DEE3F8`
+   `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`
 3. Tap the downloaded APK in your Notifications or File Manager app.
 4. **Install Unknown Apps Permission:**  
    If Android alerts that installs from this source are not permitted:

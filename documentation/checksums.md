@@ -10,8 +10,8 @@ To ensure your downloaded Delynto application packages have not been tampered wi
 
 | Package Filename | Target OS & Architecture | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- |
-| **`Delynto-0.1.0-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,632,472 bytes | `F8C47D9328FE30A138E9A1CB5CA8614E865B41EEC6648D4D58A14B089D3CE55E` |
-| **`Delynto-0.1.0.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,379,041 bytes | `C0C1C1CFC3F1D96F9399225FEC338FAE3419D5EAC77DDDFB5CF05A75E9DEE3F8` |
+| **`Delynto-0.1.0-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,632,757 bytes | `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0` |
+| **`Delynto-0.1.0.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 
 ---
 
@@ -25,7 +25,7 @@ Get-FileHash .\Delynto-0.1.0-Setup.exe -Algorithm SHA256
 ```
 
 Compare the resulting `Hash` string with:
-`F8C47D9328FE30A138E9A1CB5CA8614E865B41EEC6648D4D58A14B089D3CE55E`
+`317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0`
 
 ### 2. Linux / macOS / Android Termux (Bash)
 ```bash
@@ -33,7 +33,7 @@ sha256sum Delynto-0.1.0.apk
 ```
 
 Compare the output with:
-`c0c1c1cfc3f1d96f9399225fec338fae3419d5eac77dddfb5cf05a75e9dee3f8`
+`ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`
 
 Or verify the manifest automatically if you downloaded `SHA256SUMS.txt`:
 ```bash
