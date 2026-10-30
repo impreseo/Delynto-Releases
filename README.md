@@ -227,8 +227,8 @@ Verify the cryptographic SHA-256 integrity of your downloaded packages:
 
 | Package | Size | SHA-256 Checksum |
 | :--- | :--- | :--- |
-| **`Delynto-0.1.0-Setup.exe`** | 11,632,472 bytes (~11.09 MiB) | `F8C47D9328FE30A138E9A1CB5CA8614E865B41EEC6648D4D58A14B089D3CE55E` |
-| **`Delynto-0.1.0.apk`** | 27,379,041 bytes (~26.11 MiB) | `C0C1C1CFC3F1D96F9399225FEC338FAE3419D5EAC77DDDFB5CF05A75E9DEE3F8` |
+| **`Delynto-0.1.0-Setup.exe`** | 11,632,757 bytes (~11.09 MiB) | `317f9e2409cfcba3ca687e914d2d0dc5f983839ae99cd743ff92720db7fa07d0` |
+| **`Delynto-0.1.0.apk`** | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 
 ### Windows PowerShell:
 ```powershell
