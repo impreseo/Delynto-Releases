@@ -1,6 +1,6 @@
 # Delynto — File Transfer Guide
 
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

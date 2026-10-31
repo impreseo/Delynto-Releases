@@ -1,10 +1,10 @@
-# Delynto v0.1.2 — Hotspot Connectivity & UX Update
-### Powered by IMPRESEO LABS
-**Tagline:** *JUST OPEN. DISCOVER. CONNECT. SHARE.*
+# Delynto v0.2.0 — Universal Connectivity & MultiLink Experience
+### Developed by QUELRAVO • MultiLink
+**QUELRAVO — INNOVATION BEYOND LIMITS**  
+*One Connection. Multiple Ways to Transfer.*  
+*Delynto — Powered by QUELRAVO MultiLink*
 
-We are pleased to announce the official release of **Delynto** (`v0.1.2`), our major **Hotspot Connectivity & UX Update** for **Windows 10/11** and **Android 8.0+**.
-
-This release brings zero-config **Hotspot-First Connectivity**—allowing instant, reliable discovery and high-speed local file transfer when an Android phone hosts a mobile hotspot and a Windows PC connects to it (or vice versa), without requiring an external internet connection or router. It also delivers a complete user interface decluttering, removing low-level diagnostic noise in favor of clean, responsive device cards and streamlined pairing workflows.
+We are proud to announce the official release of **Delynto** (`v0.2.0`), introducing **QUELRAVO MultiLink** alongside official company rebranding, cross-platform UI parity, and universal connectivity across **Windows 10/11** and **Android 8.0+**.
 
 ---
 
@@ -12,67 +12,55 @@ This release brings zero-config **Hotspot-First Connectivity**—allowing instan
 
 | Package Filename | Platform & Architecture | Format | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- | :--- |
-| [**`Delynto-0.1.2-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.2/Delynto-0.1.2-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,634,858 bytes (~11.10 MiB) | `efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f` |
-| [**`Delynto-0.1.2.apk`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.2/Delynto-0.1.2.apk) | Android 8.0+ (`arm64-v8a`, `x86_64`) | Android APK | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
-| [**`SHA256SUMS.txt`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.2/SHA256SUMS.txt) | All Platforms | Plain Text Manifest | 174 bytes | Manifest containing all verified hashes |
+| [**`Delynto-0.2.0-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.0/Delynto-0.2.0-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,632,815 bytes (~11.09 MiB) | `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e` |
+| [**`Delynto-0.2.0.apk`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.0/Delynto-0.2.0.apk) | Android 8.0+ (`arm64-v8a`, `x86_64`) | Android APK | 27,638,658 bytes (~26.36 MiB) | `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974` |
+| [**`SHA256SUMS.txt`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.0/SHA256SUMS.txt) | All Platforms | Plain Text Manifest | 168 bytes | Manifest containing verified hashes |
 
 ### Checksum Verification Commands
 - **Windows (PowerShell):**
   ```powershell
-  Get-FileHash .\Delynto-0.1.2-Setup.exe -Algorithm SHA256
+  Get-FileHash .\Delynto-0.2.0-Setup.exe -Algorithm SHA256
   ```
-  Expected: `efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f`
+  Expected: `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e`
 
 - **Linux / macOS / Android Termux (Bash):**
   ```bash
-  sha256sum Delynto-0.1.2.apk
+  sha256sum Delynto-0.2.0.apk
   # Or verify manifest
   sha256sum -c SHA256SUMS.txt
   ```
-  Expected: `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`
+  Expected: `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974`
 
 ---
 
-## ⚡ What's New in v0.1.2
+## ⚡ What's New in v0.2.0
 
-### 1. Hotspot-First Zero-Configuration Connectivity
-- **The Challenge:** When an Android phone enables a mobile hotspot and a Windows PC joins as a Wi-Fi client (or vice versa), Android tethering firewalls (`iptables` / driver powersave) frequently drop broadcast packets (`255.255.255.255`, `192.168.43.255`) and multicast groups (`239.255.0.1`), rendering devices invisible to each other.
-- **The Solution:**
-  - **Gateway Candidate Probing:** Delynto automatically computes the subnet default gateway `((ip & netmask) | 1)` on port `53317`. A Windows PC connected to an Android hotspot (`192.168.43.x`) immediately sends direct unicast discovery probes to `192.168.43.1:53317`.
-  - **Tethering DHCP Client Sweeping:** When the host device possesses a `.1` address on standard mobile hotspot subnets (`192.168.43.0/24`, `192.168.49.0/24`, or `192.168.50.0/24`), it sweeps candidate client IPs (`.2` through `.25`) over UDP.
-  - **Reciprocal Unicast Announcements:** Upon receiving a valid discovery packet from any new or updated peer, the discovery receiver immediately replies with an explicit reciprocal unicast announcement directly to the sender's source IP and port. Even if the network enforces client isolation, discovery is established bidirectionally in milliseconds.
+### 1. Official Company Rebranding — QUELRAVO
+- **Identity:** Transitioned corporate attribution to **Developed by QUELRAVO** (`QUELRAVO — INNOVATION BEYOND LIMITS`).
+- **Unified Branding:** Updated all user-facing footers, splash screens, About dialogues, Settings views, installers, and technical documentation.
+- **Product Nomenclature:** Standardized consumer product as **Delynto**, internal networking engine as **RelayMesh**, and connection technology as **QUELRAVO MultiLink**.
 
-### 2. Complete Devices Screen Overhaul & UI Decluttering
-- **Noise Elimination:** Removed diagnostic clutter from primary views:
-  - Eliminated RelayMesh port badges, STUN candidate count badges, LAN host badges, route probing buttons, and raw cryptographic fingerprints.
-- **Clean Device Cards:** Each discovered peer displays:
-  - Platform device icon (Windows laptop / Android smartphone).
-  - Clean device name.
-  - Platform identity.
-  - Live status indicator ("Online").
-  - Prominent action button: **Send Files** (for trusted/paired devices) or **Connect** (for new nearby devices).
-- **Secondary Modals:** Direct IP input and QR pairing are moved into clean, dedicated modals that keep the main interface uncluttered.
-- **Hotspot-First Guidance:** The empty state now provides friendly, actionable guidance:
-  > *"Connect both devices to the same Wi-Fi network. Using your phone's hotspot? Turn it on and connect your PC to it."*
+### 2. Dedicated MultiLink UI (6 Connection Methods)
+Delynto now includes a dedicated **MultiLink** screen on both Windows desktop and Android mobile, allowing users to select, configure, and inspect 6 universal transfer transports:
 
-### 3. Cross-Platform Consistency
-- Standardized UI scope to strictly supported platforms: **Windows** and **Android**. Removed mock/unsupported Mac and Linux references from platform filters, activity logs, and device selection dialogs.
-- Harmonized Pearl × Obsidian theme switching, navigation headers, and status rails across desktop and mobile.
+1. **Wi-Fi / Hotspot (Recommended & Available):** Direct high-speed local encrypted transfer over standard Wi-Fi LAN or mobile phone hotspot (speeds up to 1.2 Gbps).
+2. **USB Cable (Requires Setup):** Physical direct USB connection between Android and Windows PC using high-throughput tethered links (speeds up to 5.0 Gbps).
+3. **Bluetooth (Available / Fallback):** Direct peer-to-peer connection via Bluetooth Classic / BLE for lightweight transfers and offline fallback when Wi-Fi is unavailable (speeds up to 2.1 Mbps).
+4. **Wi-Fi Direct (Requires Setup):** Direct wireless P2P connection established directly between devices without requiring a router or access point (speeds up to 450 Mbps).
+5. **USB Tethering (Requires Setup):** Creates a high-performance virtual Ethernet adapter (`192.168.42.x`, RNDIS/NCM) between Android and Windows with zero configuration (speeds up to 480 Mbps).
+6. **Internet Relay (Available):** Optional encrypted remote transfer between devices on separate networks. Zero cloud storage, end-to-end encrypted with ChaCha20-Poly1305.
 
----
+Each method features real-time status indicators (`Available`, `Checking`, `Connecting`, `Connected`, `Requires setup`, `Not supported`), speed ratings, and interactive setup walkthrough guides.
 
-## 📱 Mobile Hotspot Usage Guide
-
-### Scenario: Sharing Between Phone and PC Without a Router
-1. On your **Android device**, turn on **Personal Hotspot / Mobile Hotspot**.
-2. On your **Windows PC**, connect to the hotspot's Wi-Fi network.
-3. Open **Delynto** on both devices.
-4. Within seconds, your devices will appear in the **Nearby Devices** list.
-5. Click **Connect** to pair, then select files to transfer at direct local Wi-Fi speeds.
+### 3. Unified Cross-Platform Experience
+- **Navigation Parity:** Both desktop and mobile navigation now feature 5 harmonious sections: Nearby Radar, MultiLink, Send/Drop Zone, Active Transfers, and Settings.
+- **Honest Statuses:** Full runtime state evaluation with zero artificial or misleading statuses.
+- **Pearl × Obsidian Visual Hierarchy:** High-contrast, executive-grade design tailored for low-light and bright working environments.
 
 ---
 
 ## 🔒 Security & Privacy Architecture
-- **Local-First / Zero-Cloud:** All discovery and file transfers occur entirely across the local network link. No telemetry, user accounts, or external servers are utilized.
+- **Local-First / Zero-Cloud:** All discovery and file transfers occur directly peer-to-peer. Zero cloud storage or account requirement.
 - **Ed25519 Cryptographic Identity:** Every device maintains an immutable Ed25519 keypair for identity verification and SAS verification codes.
-- **Path Sanitization:** All incoming transfers strictly enforce directory traversal and Windows reserved filename protections.
+- **Keypair Integrity:** Core keypair implementation (`crates/relaymesh-identity/src/keypair.rs`) cryptographically verified (`72E7EAA278F922CACF7C1BE8909BF6E339CB08F4A3A3555E7CD548ED730D00C0`).
+- **Path Traversal Protection:** All incoming file transfers enforce directory traversal mitigation and Windows reserved filename protections.

@@ -3,7 +3,7 @@
 **Product:** Delynto for Android  
 **Target:** Android 8.0+ (API 26+)  
 **Architectures:** `arm64-v8a`, `x86_64`  
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

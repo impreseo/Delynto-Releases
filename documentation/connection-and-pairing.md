@@ -1,7 +1,7 @@
 # Delynto — Connection & Pairing Guide
 
 **Product Principle:** *JUST OPEN. DISCOVER. CONNECT. SHARE.*  
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

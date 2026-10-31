@@ -1,17 +1,18 @@
 # Delynto — Cryptographic Checksum Verification
 
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**  
+**QUELRAVO — INNOVATION BEYOND LIMITS**
 
 To ensure your downloaded Delynto application packages have not been tampered with or corrupted in transit, verify their cryptographic SHA-256 hashes against the official records published below.
 
 ---
 
-## 🔒 Official SHA-256 Checksums (v0.1.2)
+## 🔒 Official SHA-256 Checksums (v0.2.0)
 
 | Package Filename | Target OS & Architecture | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- |
-| **`Delynto-0.1.2-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,634,858 bytes | `efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f` |
-| **`Delynto-0.1.2.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
+| **`Delynto-0.2.0-Setup.exe`** | Windows 10 / 11 (64-bit) | 11,632,815 bytes (~11.09 MiB) | `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e` |
+| **`Delynto-0.2.0.apk`** | Android 8.0+ (ARM64 / x86_64) | 27,638,658 bytes (~26.36 MiB) | `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974` |
 
 ---
 
@@ -21,19 +22,19 @@ To ensure your downloaded Delynto application packages have not been tampered wi
 Open PowerShell in the directory where your download is saved:
 
 ```powershell
-Get-FileHash .\Delynto-0.1.2-Setup.exe -Algorithm SHA256
+Get-FileHash .\Delynto-0.2.0-Setup.exe -Algorithm SHA256
 ```
 
 Compare the resulting `Hash` string with:
-`efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f`
+`a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e`
 
 ### 2. Linux / macOS / Android Termux (Bash)
 ```bash
-sha256sum Delynto-0.1.2.apk
+sha256sum Delynto-0.2.0.apk
 ```
 
 Compare the output with:
-`ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`
+`072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974`
 
 Or verify the manifest automatically if you downloaded `SHA256SUMS.txt`:
 ```bash

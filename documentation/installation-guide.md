@@ -11,14 +11,14 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
 - Administrator privileges are **not required**; Delynto installs directly into the current user's profile.
 
 ### Step-by-Step Installation
-1. Download **`Delynto-0.1.2-Setup.exe`** from the [Delynto-Releases](https://github.com/impreseo/Delynto-Releases/releases/latest) repository.
+1. Download **`Delynto-0.2.0-Setup.exe`** from the [Delynto-Releases](https://github.com/impreseo/Delynto-Releases/releases/latest) repository.
 2. Verify the SHA-256 hash using PowerShell:
    ```powershell
-   Get-FileHash .\Delynto-0.1.2-Setup.exe -Algorithm SHA256
+   Get-FileHash .\Delynto-0.2.0-Setup.exe -Algorithm SHA256
    ```
    Ensure it matches:
-   `efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f`
-3. Double-click `Delynto-0.1.2-Setup.exe`.
+   `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e`
+3. Double-click `Delynto-0.2.0-Setup.exe`.
 4. **SmartScreen Warning Resolution:**  
    Because this initial public beta binary is open-source and unsigned (does not carry an expensive paid EV commercial certificate), Windows Defender SmartScreen may display:
    > *"Windows protected your PC — Microsoft Defender SmartScreen prevented an unrecognized app from starting."*
@@ -43,13 +43,13 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
 - ARM64 (`arm64-v8a`) or x86_64 device.
 
 ### Step-by-Step Installation
-1. Download **`Delynto-0.1.2.apk`** to your phone or tablet.
+1. Download **`Delynto-0.2.0.apk`** to your phone or tablet.
 2. Verify the SHA-256 hash in Termux or your terminal:
    ```bash
-   sha256sum Delynto-0.1.2.apk
+   sha256sum Delynto-0.2.0.apk
    ```
    Ensure it matches:
-   `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`
+   `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974`
 3. Tap the downloaded APK in your Notifications or File Manager app.
 4. **Install Unknown Apps Permission:**  
    If Android alerts that installs from this source are not permitted:

@@ -2,7 +2,7 @@
 
 **Product:** Delynto for Windows  
 **Architecture:** `x86_64` (64-bit native executable)  
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

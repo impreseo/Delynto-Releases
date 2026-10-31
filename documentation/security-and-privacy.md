@@ -1,6 +1,6 @@
 # Delynto — Security & Privacy Specification
 
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

@@ -1,6 +1,7 @@
 # Delynto — Product Overview
 
-**Powered by IMPRESEO LABS**  
+**Developed by QUELRAVO • MultiLink**  
+**QUELRAVO — INNOVATION BEYOND LIMITS**  
 **Product Principle:** *JUST OPEN. DISCOVER. CONNECT. SHARE.*
 
 ---
@@ -60,5 +61,5 @@ Delynto adheres to an intentional, human-crafted design language:
 
 ## Attribution & Intellectual Property
 
-Delynto is designed, developed, and maintained by **IMPRESEO LABS**.  
-All rights reserved © 2026 IMPRESEO LABS.
+Delynto is designed, developed, and maintained by **QUELRAVO** (*INNOVATION BEYOND LIMITS*).  
+All rights reserved © 2026 QUELRAVO.

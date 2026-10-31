@@ -1,6 +1,6 @@
 # Delynto — System Requirements
 
-**Powered by IMPRESEO LABS**
+**Developed by QUELRAVO • MultiLink**
 
 ---
 

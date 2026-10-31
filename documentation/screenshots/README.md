@@ -1,6 +1,6 @@
 # Delynto — Application Screenshots Gallery
 
-**Powered by IMPRESEO LABS**  
+**Developed by QUELRAVO • MultiLink**  
 **Design Palette:** Pearl × Obsidian × Liquid Glass
 
 This directory contains genuine user interface captures from the actual running Delynto applications on Windows and Android.

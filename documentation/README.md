@@ -1,8 +1,8 @@
 # Delynto — Technical & Product Documentation Index
 
 **Product:** Delynto  
-**Version:** `v0.1.1` (Stability & Connectivity Update)  
-**Attribution:** Powered by **IMPRESEO LABS**  
+**Version:** `v0.2.0` (QUELRAVO MultiLink & Complete Product Update)  
+**Attribution:** Developed by **QUELRAVO** (**QUELRAVO — INNOVATION BEYOND LIMITS**)  
 **Core Motto:** *JUST OPEN. DISCOVER. CONNECT. SHARE.*  
 **Visual Identity:** Pearl × Obsidian × Liquid Glass  
 

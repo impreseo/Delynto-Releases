@@ -17,6 +17,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.0] - 2026-10-31 — Universal Connectivity & Unified Experience
+### Summary
+Major milestone release introducing **QUELRAVO MultiLink** with 6 dedicated connectivity methods, official company rebranding to **Developed by QUELRAVO** (**QUELRAVO — INNOVATION BEYOND LIMITS**), cross-platform UI parity with 5-tab navigation, and hardened core networking engine.
+
+---
+
+### Added & Enhanced
+
+#### 🌐 QUELRAVO MultiLink (6 Transport Methods)
+- **Wi-Fi / Hotspot (Recommended & Available):** High-speed direct local encrypted transfer over standard Wi-Fi LAN or phone hotspot (up to 1.2 Gbps).
+- **USB Cable (Requires Setup):** Physical direct USB connection between Android and Windows with dedicated cable transfer guidance (up to 5.0 Gbps).
+- **Bluetooth (Available / Fallback):** Nearby Bluetooth pairing and lightweight transfer fallback for documents and photos when Wi-Fi is unavailable (up to 2.1 Mbps).
+- **Wi-Fi Direct (Requires Setup):** Direct wireless P2P connection established directly between devices without requiring a router or access point (up to 450 Mbps).
+- **USB Tethering (Requires Setup):** Android USB network tethering creating a high-performance virtual Ethernet link (`192.168.42.x`, RNDIS/NCM) to Windows (up to 480 Mbps).
+- **Internet Relay (Available):** Optional encrypted remote transfer across separate networks with zero cloud storage and ChaCha20-Poly1305 end-to-end encryption.
+- **Dedicated MultiLink UI:** Dedicated tab on desktop and mobile showcasing real-time status badges, throughput ratings, and interactive setup dialogs.
+
+#### 🏢 Official Company Rebranding — QUELRAVO
+- **Attribution:** Updated all official company references to **Developed by QUELRAVO** (`QUELRAVO — INNOVATION BEYOND LIMITS`).
+- **Product Nomenclature:** Standardized consumer application as **Delynto**, internal networking engine as **RelayMesh**, and connection technology as **QUELRAVO MultiLink**.
+- **Unified Branding:** Reflected across Windows desktop, Android mobile, installers, and documentation.
+
+#### 📦 Distribution Artifacts
+- **Windows NSIS Installer:** `Delynto-0.2.0-Setup.exe` (11,632,815 bytes, SHA-256: `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e`).
+- **Android APK:** `Delynto-0.2.0.apk` (27,638,658 bytes, SHA-256: `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974`).
+
+---
+
 ## [0.1.2] - 2026-10-31 — Hotspot Connectivity & UX Update
 
 ### Summary
