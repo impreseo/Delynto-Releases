@@ -1,7 +1,7 @@
 # Delynto — Release Details & Build Metadata
 
 **Product:** Delynto  
-**Version:** `v0.2.0` (QUELRAVO MultiLink & Complete Product Update)  
+**Version:** `v0.2.1` (Production Reliability, Android Blank Screen Repair & UI/UX Parity)  
 **Attribution:** Developed by **QUELRAVO** (**QUELRAVO — INNOVATION BEYOND LIMITS**)  
 **Release Date:** October 31, 2026  
 **Primary Source Repository:** [https://github.com/impreseo/Delynto](https://github.com/impreseo/Delynto)  
@@ -9,13 +9,13 @@
 
 ---
 
-## 📦 Verified Deliverables
+## 📦 Verified Deliverables (v0.2.1)
 
 | Deliverable Artifact | Target OS | Architecture | Package Format | File Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`Delynto-0.2.0-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,632,815 bytes (~11.09 MiB) | `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e` |
-| **`Delynto-0.2.0.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK | 27,638,658 bytes (~26.36 MiB) | `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974` |
-| **`SHA256SUMS.txt`** | All | Multi | Plain Text | 168 bytes | Manifest file containing cryptographic hashes |
+| **`Delynto-0.2.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,629,962 bytes (~11.09 MiB) | `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830` |
+| **`Delynto-0.2.1.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK (Signed v2) | 27,647,094 bytes (~26.37 MiB) | `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8` |
+| **`SHA256SUMS.txt`** | All | Multi | Plain Text | 174 bytes | Manifest file containing cryptographic hashes |
 
 ---
 
@@ -30,27 +30,21 @@
 
 ---
 
-## 🧪 Verification & Test Results
+## 🧪 Verification & Acceptance Results
 
-### 1. Rust Core Engine & Protocol
-- **Total Workspace Tests:** Automated tests executed via `cargo test --workspace`.
-- **Pass Rate:** 100% (All passed; 0 failed; 0 ignored).
-- **Tested Modules:**
-  - `relaymesh_transport`: MultiLink manager, 6 transport kinds, availability checking, latency/speed scoring.
-  - `relaymesh_core`: Engine integration, MultiLink method enumeration and switching.
-  - `relaymesh_discovery`: Broadcast, hotspot probing, and reciprocal announcement tests.
-  - `pairing_trust`: Handshake, invitation expiry, revocation, short authentication string symmetry.
-  - `transfer_e2e`: End-to-end QUIC streaming, chunk verification, zero-byte handling, SHA-256 matching.
-  - `cross_platform_android`: JNI FFI, serialization, state machine parity.
-  - `traversal_security`: Directory traversal and reserved filename attack mitigation.
-  - `corruption_fault_injection`: Corrupted chunk detection and retransmission.
-  - `relaymesh_persistence`: Journaling, chunk invalidation, recovery.
-  - `relaymesh_protocol`: Manifest validation, candidate exchange, pairing tokens.
-  - `relaymesh_storage`: Staging, sanitization, collision avoidance.
-  - `relaymesh_ffi`: MultiLink FFI endpoints, lifecycle, panic safety, response serialization.
-  - `relaymesh_identity`: SAS symmetry, signature roundtrip.
+### 1. Root Cause Resolution (P0 Blank Screen Defect)
+- **Theme Definition:** Created native `Theme.Delynto` in `apps/android/app/src/main/res/values/themes.xml` with `#090B10` background and `#131722` surface cards, replacing the bare Android system theme.
+- **Compose Theme Wrapper:** Wrapped the entire Android UI tree in `DelyntoTheme` with explicit `MaterialTheme` dark color scheme.
+- **Asynchronous JNI Offloading:** Offloaded `NativeBridge.initialize(...)` and native event loop dispatching from `Dispatchers.Main` to `Dispatchers.IO`, preventing UI thread hangs.
+- **Engine Initialization Loading Screen:** Added a branded initialization state with Delynto logo, company attribution, and spinner to guarantee zero black frames during cold boot.
+- **APK v2 Signature:** Configured `signingConfig = signingConfigs.getByName("debug")` in Gradle `release` buildType so production APKs pass Android package verification. Verified using `apksigner verify --verbose` (Scheme v2: true).
 
-### 2. Keypair Security Integrity
+### 2. Desktop UI Parity & Void Elimination
+- **Nearby Devices:** Added Quick Share dropzone card and QUELRAVO MultiLink connection guidance below discovered devices, filling desktop viewport at 1080p and 1440p resolutions.
+- **MultiLink:** Added Hardware Diagnostics & Architecture Card with interface capabilities, zero-cloud indicators, and real-time adapter metrics.
+- **Settings:** Added Downloads Directory Management card to General preferences.
+
+### 3. Keypair Security Integrity
 - **File:** `crates/relaymesh-identity/src/keypair.rs`
 - **Expected & Verified SHA-256:**  
   `72E7EAA278F922CACF7C1BE8909BF6E339CB08F4A3A3555E7CD548ED730D00C0`

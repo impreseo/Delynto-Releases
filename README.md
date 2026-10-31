@@ -8,8 +8,8 @@
 
 **Private • Zero-Cloud • High-Speed Device-to-Device File Transfer**
 
-[![Release](https://img.shields.io/badge/Release-v0.2.0--MultiLink%20&%20Universal-7661FF?style=for-the-badge&logo=github)](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.2.0)
-[![Status](https://img.shields.io/badge/Status-Public%20Beta-00D1FF?style=for-the-badge)](https://github.com/impreseo/Delynto-Releases/releases/latest)
+[![Release](https://img.shields.io/badge/Release-v0.2.1--Reliability%20&%20Parity-7661FF?style=for-the-badge&logo=github)](https://github.com/impreseo/Delynto-Releases/releases/tag/v0.2.1)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-00D1FF?style=for-the-badge)](https://github.com/impreseo/Delynto-Releases/releases/latest)
 [![Platform](https://img.shields.io/badge/Platforms-Windows%20%7C%20Android-10B981?style=for-the-badge)](documentation/system-requirements.md)
 [![License](https://img.shields.io/badge/License-Apache%202.0-38BDF8?style=for-the-badge)](LICENSE)
 [![Zero Cloud](https://img.shields.io/badge/Cloud%20Dependency-0%25%20(Local--First)-6366F1?style=for-the-badge)](documentation/security-and-privacy.md)
@@ -27,7 +27,7 @@
 
 <br/>
 
-## 📥 Official Downloads (v0.2.0 — Universal Connectivity & MultiLink Experience)
+## 📥 Official Downloads (v0.2.1 — Production Reliability & UI/UX Parity)
 
 Download the official production packages for your operating system. All downloads operate 100% offline and do not require account registration or cloud sign-in.
 
@@ -42,14 +42,14 @@ Download the official production packages for your operating system. All downloa
     <tr>
       <td align="center" valign="top">
         <br/>
-        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.0/Delynto-0.2.0-Setup.exe">
+        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1-Setup.exe">
           <img src="https://img.shields.io/badge/Download%20for%20Windows-Setup.exe%20(11.09%20MB)-7661FF?style=for-the-badge&logo=windows&logoColor=white" alt="Download Delynto for Windows" height="42" />
         </a>
         <br/><br/>
-        <b>Package:</b> <code>Delynto-0.2.0-Setup.exe</code><br/>
-        <b>Version:</b> <code>v0.2.0</code> (Universal Connectivity & MultiLink)<br/>
+        <b>Package:</b> <code>Delynto-0.2.1-Setup.exe</code><br/>
+        <b>Version:</b> <code>v0.2.1</code> (Production Reliability & Parity)<br/>
         <b>Architecture:</b> <code>x86_64</code> (64-bit Intel / AMD)<br/>
-        <b>File Size:</b> 11,632,815 bytes (~11.09 MiB)<br/>
+        <b>File Size:</b> 11,629,962 bytes (~11.09 MiB)<br/>
         <b>Format:</b> NSIS Standalone Installer<br/>
         <b>Requirements:</b> Windows 10 (Build 19041+) or Windows 11<br/>
         <br/>
@@ -58,14 +58,14 @@ Download the official production packages for your operating system. All downloa
       </td>
       <td align="center" valign="top">
         <br/>
-        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.0/Delynto-0.2.0.apk">
-          <img src="https://img.shields.io/badge/Download%20for%20Android-APK%20(26.36%20MB)-00D1FF?style=for-the-badge&logo=android&logoColor=white" alt="Download Delynto for Android" height="42" />
+        <a href="https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1.apk">
+          <img src="https://img.shields.io/badge/Download%20for%20Android-APK%20(26.37%20MB)-00D1FF?style=for-the-badge&logo=android&logoColor=white" alt="Download Delynto for Android" height="42" />
         </a>
         <br/><br/>
-        <b>Package:</b> <code>Delynto-0.2.0.apk</code><br/>
-        <b>Version:</b> <code>v0.2.0</code> (Universal Connectivity & MultiLink)<br/>
+        <b>Package:</b> <code>Delynto-0.2.1.apk</code><br/>
+        <b>Version:</b> <code>v0.2.1</code> (Signed v2 Scheme)<br/>
         <b>Supported ABIs:</b> <code>arm64-v8a</code>, <code>x86_64</code><br/>
-        <b>File Size:</b> 27,638,658 bytes (~26.36 MiB)<br/>
+        <b>File Size:</b> 27,647,094 bytes (~26.37 MiB)<br/>
         <b>Format:</b> Android Application Package (APK)<br/>
         <b>Requirements:</b> Android 8.0 Oreo (API 26) or newer<br/>
         <br/>
@@ -81,17 +81,17 @@ Verify the cryptographic authenticity of your download prior to execution:
 
 | Binary Asset | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- |
-| **`Delynto-0.2.0-Setup.exe`** | 11,632,815 bytes | `a0a2a0427f1f26e1a94ed31ad6be6e74bb846a111dd61df28d704c9d8baedc6e` |
-| **`Delynto-0.2.0.apk`** | 27,638,658 bytes | `072feaf1b5c0c53b6def5cc358d1b92419b4dd2f0b0426737e75ccf6eba0a974` |
+| **`Delynto-0.2.1-Setup.exe`** | 11,629,962 bytes | `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830` |
+| **`Delynto-0.2.1.apk`** | 27,647,094 bytes | `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8` |
 
 ```powershell
 # Windows PowerShell
-Get-FileHash .\Delynto-0.2.0-Setup.exe -Algorithm SHA256
+Get-FileHash .\Delynto-0.2.1-Setup.exe -Algorithm SHA256
 ```
 
 ```bash
 # Linux / macOS / Android Termux
-sha256sum Delynto-0.2.0.apk
+sha256sum Delynto-0.2.1.apk
 # Or verify manifest
 sha256sum -c SHA256SUMS.txt
 ```

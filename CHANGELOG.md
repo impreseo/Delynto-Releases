@@ -17,6 +17,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.1] - 2026-10-31 — Production Reliability & UI/UX Parity Update
+### Summary
+Critical production patch resolving the mobile blank-screen defect (P0), restoring full Android–Desktop UI parity, eliminating desktop screen voids, and adding Android APK v2 signature verification.
+
+### Fixed
+- **Mobile Blank Screen Defect (P0):** Fixed application startup failure on Android devices. Created native `Theme.Delynto` (`#090B10` background, `#131722` surface) in `themes.xml` and applied it in `AndroidManifest.xml`. Wrapped the entire Compose tree in `DelyntoTheme` with explicit `MaterialTheme` dark tokens. Offloaded JNI initialization and event polling to background `Dispatchers.IO` coroutine context. Added an initial branded loading screen to ensure zero black frames during cold boot.
+- **Android APK v2 Signature:** Configured `signingConfig = signingConfigs.getByName("debug")` in `build.gradle.kts` release buildType. Verified via `apksigner verify --verbose` (APK Signature Scheme v2: true).
+- **Desktop Screen Void Elimination:** Added an integrated Quick Share dropzone card and QUELRAVO MultiLink guidance tips below discovered device cards on high-resolution screens. Added a Hardware Diagnostics & Architecture Card to the MultiLink view. Added Downloads Directory configuration to Settings.
+
+### Changed
+- Bumped Rust JNI FFI version to `0.2.1` in `crates/relaymesh-ffi/src/lib.rs`.
+- Bumped desktop package version to `0.2.1` in `apps/desktop/package.json` and `apps/desktop/src-tauri/Cargo.toml`.
+- Replaced desktop screenshots with genuine, high-resolution verification captures.
+
+### Preserved
+- `crates/relaymesh-identity/src/keypair.rs` untouched and verified (`72E7EAA278F922CACF7C1BE8909BF6E339CB08F4A3A3555E7CD548ED730D00C0`).
+
+---
+
 ## [0.2.0] - 2026-10-31 — Universal Connectivity & Unified Experience
 ### Summary
 Major milestone release introducing **QUELRAVO MultiLink** with 6 dedicated connectivity methods, official company rebranding to **Developed by QUELRAVO** (**QUELRAVO — INNOVATION BEYOND LIMITS**), cross-platform UI parity with 5-tab navigation, and hardened core networking engine.
