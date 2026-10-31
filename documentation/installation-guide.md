@@ -17,7 +17,7 @@ This guide covers step-by-step instructions for deploying Delynto on Windows 10/
    Get-FileHash .\Delynto-0.1.1-Setup.exe -Algorithm SHA256
    ```
    Ensure it matches:
-   `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`
+   `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c`
 3. Double-click `Delynto-0.1.1-Setup.exe`.
 4. **SmartScreen Warning Resolution:**  
    Because this initial public beta binary is open-source and unsigned (does not carry an expensive paid EV commercial certificate), Windows Defender SmartScreen may display:

@@ -46,7 +46,7 @@ Download the official production packages for your operating system. All downloa
         <b>Package:</b> <code>Delynto-0.1.1-Setup.exe</code><br/>
         <b>Version:</b> <code>v0.1.1</code> (Stability & Connectivity Update)<br/>
         <b>Architecture:</b> <code>x86_64</code> (64-bit Intel / AMD)<br/>
-        <b>File Size:</b> 11,638,974 bytes (~11.10 MiB)<br/>
+        <b>File Size:</b> 11,640,083 bytes (~11.10 MiB)<br/>
         <b>Format:</b> NSIS Standalone Installer<br/>
         <b>Requirements:</b> Windows 10 (Build 19041+) or Windows 11<br/>
         <br/>
@@ -78,7 +78,7 @@ Verify the cryptographic authenticity of your download prior to execution:
 
 | Binary Asset | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- |
-| **`Delynto-0.1.1-Setup.exe`** | 11,638,974 bytes | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| **`Delynto-0.1.1-Setup.exe`** | 11,640,083 bytes | `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c` |
 | **`Delynto-0.1.1.apk`** | 27,415,905 bytes | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 
 ```powershell

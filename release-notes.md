@@ -12,7 +12,7 @@ This release resolves the root causes of automatic nearby-device discovery failu
 
 | Package Filename | Platform & Architecture | Format | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- | :--- |
-| [**`Delynto-0.1.1-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/Delynto-0.1.1-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,638,974 bytes (~11.10 MiB) | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| [**`Delynto-0.1.1-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/Delynto-0.1.1-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,640,083 bytes (~11.10 MiB) | `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c` |
 | [**`Delynto-0.1.1.apk`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/Delynto-0.1.1.apk) | Android 8.0+ (`arm64-v8a`, `x86_64`) | Android APK | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 | [**`SHA256SUMS.txt`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.1.1/SHA256SUMS.txt) | All Platforms | Plain Text Manifest | 174 bytes | Manifest containing all verified hashes |
 
@@ -21,7 +21,7 @@ This release resolves the root causes of automatic nearby-device discovery failu
   ```powershell
   Get-FileHash .\Delynto-0.1.1-Setup.exe -Algorithm SHA256
   ```
-  Expected: `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`
+  Expected: `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c`
 
 - **Linux / macOS / Android Termux (Bash):**
   ```bash

@@ -13,7 +13,7 @@
 
 | Deliverable Artifact | Target OS | Architecture | Package Format | File Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`Delynto-0.1.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,638,974 bytes (~11.10 MiB) | `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b` |
+| **`Delynto-0.1.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,640,083 bytes (~11.10 MiB) | `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c` |
 | **`Delynto-0.1.1.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK | 27,415,905 bytes (~26.14 MiB) | `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b` |
 | **`SHA256SUMS.txt`** | All | Multi | Plain Text | 174 bytes | Manifest file containing cryptographic hashes |
 

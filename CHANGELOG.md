@@ -37,7 +37,7 @@ Comprehensive stability and connectivity restoration update for **Delynto** (Pow
 - **FFI JNI Version Alignment:** Harmonized native library version reporting (`relaymesh_version`) and JNI bindings to `"0.1.1"`.
 
 #### 📦 Distribution Artifacts
-- Fresh Windows NSIS Installer: `Delynto-0.1.1-Setup.exe` (11,638,974 bytes, SHA-256: `2f28394e271284e3493cbea67b7a063d7de241080a142ce23f565c2e322b0f4b`).
+- Fresh Windows NSIS Installer: `Delynto-0.1.1-Setup.exe` (11,640,083 bytes, SHA-256: `724f75520c492495543c29f9132fbbcc414d658e8e43731643a1e94a9a699a2c`).
 - Verified Android APK: `Delynto-0.1.1.apk` (27,415,905 bytes, SHA-256: `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`).
 
 ---
