@@ -1,7 +1,7 @@
 # Delynto — Release Details & Build Metadata
 
 **Product:** Delynto  
-**Version:** `v0.2.1` (Production Reliability, Android Blank Screen Repair & UI/UX Parity)  
+**Version:** `v0.2.1` (Production Reliability, MultiLink Functionality & UI/UX Parity)  
 **Attribution:** Developed by **QUELRAVO** (**QUELRAVO — INNOVATION BEYOND LIMITS**)  
 **Release Date:** October 31, 2026  
 **Primary Source Repository:** [https://github.com/impreseo/Delynto](https://github.com/impreseo/Delynto)  
@@ -13,8 +13,8 @@
 
 | Deliverable Artifact | Target OS | Architecture | Package Format | File Size | SHA-256 Checksum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`Delynto-0.2.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,629,962 bytes (~11.09 MiB) | `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830` |
-| **`Delynto-0.2.1.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK (Signed v2) | 27,647,094 bytes (~26.37 MiB) | `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8` |
+| **`Delynto-0.2.1-Setup.exe`** | Windows 10/11 | `x86_64` | NSIS Executable | 11,639,483 bytes (~11.10 MiB) | `b9fa11523d9bfbe0200a230c3ccceb5a8a0461029e9b243620593114a8b257ff` |
+| **`Delynto-0.2.1.apk`** | Android 8.0+ | `arm64-v8a`, `x86_64` | Android APK (Signed v2) | 27,647,738 bytes (~26.37 MiB) | `689b5fd05953f8c0aa71b786252e16abeb10722e498f775bafa78e6a83832d67` |
 | **`SHA256SUMS.txt`** | All | Multi | Plain Text | 174 bytes | Manifest file containing cryptographic hashes |
 
 ---
@@ -32,17 +32,22 @@
 
 ## 🧪 Verification & Acceptance Results
 
-### 1. Root Cause Resolution (P0 Blank Screen Defect)
-- **Theme Definition:** Created native `Theme.Delynto` in `apps/android/app/src/main/res/values/themes.xml` with `#090B10` background and `#131722` surface cards, replacing the bare Android system theme.
-- **Compose Theme Wrapper:** Wrapped the entire Android UI tree in `DelyntoTheme` with explicit `MaterialTheme` dark color scheme.
-- **Asynchronous JNI Offloading:** Offloaded `NativeBridge.initialize(...)` and native event loop dispatching from `Dispatchers.Main` to `Dispatchers.IO`, preventing UI thread hangs.
-- **Engine Initialization Loading Screen:** Added a branded initialization state with Delynto logo, company attribution, and spinner to guarantee zero black frames during cold boot.
-- **APK v2 Signature:** Configured `signingConfig = signingConfigs.getByName("debug")` in Gradle `release` buildType so production APKs pass Android package verification. Verified using `apksigner verify --verbose` (Scheme v2: true).
+### 1. QUELRAVO MultiLink Redesign & Defect Rectification
+- **Hero Section:** Clean high contrast in both Pearl (light) and Obsidian (dark) modes. Primary heading "QUELRAVO MultiLink", violet subheading "One Connection. Multiple Ways to Transfer.", and description "Connect your devices through the method that works best for you." Secondary corporate attribution pill.
+- **Unified 6-Card System:** Every card shares an identical component layout, background, border, corner radius (18px), and padding. Removed all repetitive question mark help circles in favor of a single clear action button per card.
+- **Truthful Availability & Implementation Statuses:**
+  - Wi-Fi / Hotspot: Available (Recommended for local wireless).
+  - USB Tethering: Available / Requires Setup (Recommended for direct physical cable transfer).
+  - USB Cable: Experimental / Direct Cable (Tethering recommended for immediate transfer).
+  - Bluetooth: Requires Setup (Offline fallback for light documents & photos).
+  - Wi-Fi Direct: Requires Setup (Direct wireless peer-to-peer; mobile hotspot recommended).
+  - Internet Relay: In Standby (Zero-cloud remote standby; public infrastructure in standby).
+- **Speed Claim Rectification:** Removed unverified theoretical speed numbers (e.g. 1.2 Gbps, 5.0 Gbps). Replaced with honest qualitative throughput tiers (`Local Wireless · High-Speed`, `Direct Hardware · Maximum Cable Speed`, etc.). Real speeds are measured and displayed dynamically during live transfers.
+- **Focused Bottom Section:** Replaced raw diagnostic terminology with an active connection status card and setup guidance box. Advanced adapter metrics remain accessible in Settings.
 
-### 2. Desktop UI Parity & Void Elimination
-- **Nearby Devices:** Added Quick Share dropzone card and QUELRAVO MultiLink connection guidance below discovered devices, filling desktop viewport at 1080p and 1440p resolutions.
-- **MultiLink:** Added Hardware Diagnostics & Architecture Card with interface capabilities, zero-cloud indicators, and real-time adapter metrics.
-- **Settings:** Added Downloads Directory Management card to General preferences.
+### 2. Mobile Blank Screen Defect (P0) & APK Signing
+- Theme definition (`Theme.Delynto`), `MaterialTheme` Compose wrapper, and background `Dispatchers.IO` JNI offloading guarantee cold-boot rendering with zero blank frames.
+- Android APK v2 signature verified using `apksigner verify --verbose` (Scheme v2: true).
 
 ### 3. Keypair Security Integrity
 - **File:** `crates/relaymesh-identity/src/keypair.rs`

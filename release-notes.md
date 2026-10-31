@@ -1,10 +1,10 @@
-# Delynto v0.2.1 — Production Reliability & UI/UX Parity Update
+# Delynto v0.2.1 — MultiLink Functionality Repair & Production UI/UX Parity
 ### Developed by QUELRAVO • MultiLink
 **QUELRAVO — INNOVATION BEYOND LIMITS**  
 *One Connection. Multiple Ways to Transfer.*  
 *Delynto — Powered by QUELRAVO MultiLink*
 
-We are pleased to announce the release of **Delynto** (`v0.2.1`), a critical production reliability and cross-platform UX update. This release resolves the P0 mobile blank-screen defect, enhances desktop viewport layout to eliminate empty void, adds APK v2 signature verification, and brings full Android–Desktop design parity.
+We are pleased to announce the release of **Delynto** (`v0.2.1`), delivering a complete overhaul of the **QUELRAVO MultiLink** interface, repairing method presentation, eliminating confusing technical noise, restoring light and dark theme contrast, removing unverified theoretical speed claims, and establishing unified visual parity across Windows desktop and Android mobile.
 
 ---
 
@@ -12,8 +12,8 @@ We are pleased to announce the release of **Delynto** (`v0.2.1`), a critical pro
 
 | Package Filename | Platform & Architecture | Format | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- | :--- | :--- |
-| [**`Delynto-0.2.1-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,629,962 bytes (~11.09 MiB) | `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830` |
-| [**`Delynto-0.2.1.apk`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1.apk) | Android 8.0+ (`arm64-v8a`, `x86_64`) | Android APK (Signed v2) | 27,647,094 bytes (~26.37 MiB) | `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8` |
+| [**`Delynto-0.2.1-Setup.exe`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1-Setup.exe) | Windows 10 / 11 (`x86_64`) | NSIS Standalone Installer | 11,639,483 bytes (~11.10 MiB) | `b9fa11523d9bfbe0200a230c3ccceb5a8a0461029e9b243620593114a8b257ff` |
+| [**`Delynto-0.2.1.apk`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/Delynto-0.2.1.apk) | Android 8.0+ (`arm64-v8a`, `x86_64`) | Android APK (Signed v2) | 27,647,738 bytes (~26.37 MiB) | `689b5fd05953f8c0aa71b786252e16abeb10722e498f775bafa78e6a83832d67` |
 | [**`SHA256SUMS.txt`**](https://github.com/impreseo/Delynto-Releases/releases/download/v0.2.1/SHA256SUMS.txt) | All Platforms | Plain Text Manifest | 174 bytes | Manifest containing verified hashes |
 
 ### Checksum Verification Commands
@@ -21,7 +21,7 @@ We are pleased to announce the release of **Delynto** (`v0.2.1`), a critical pro
   ```powershell
   Get-FileHash .\Delynto-0.2.1-Setup.exe -Algorithm SHA256
   ```
-  Expected: `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830`
+  Expected: `b9fa11523d9bfbe0200a230c3ccceb5a8a0461029e9b243620593114a8b257ff`
 
 - **Linux / macOS / Android Termux (Bash):**
   ```bash
@@ -29,28 +29,30 @@ We are pleased to announce the release of **Delynto** (`v0.2.1`), a critical pro
   # Or verify manifest
   sha256sum -c SHA256SUMS.txt
   ```
-  Expected: `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8`
+  Expected: `689b5fd05953f8c0aa71b786252e16abeb10722e498f775bafa78e6a83832d67`
 
 ---
 
 ## ⚡ What's New & Fixed in v0.2.1
 
-### 1. Critical Mobile Blank Screen Defect Resolution (P0 Defect)
-- **Root Cause 1 (Missing Theme Definition):** Android previously inherited `Theme.Material.NoActionBar` with a default black background. Added native `Theme.Delynto` in `themes.xml` (`#090B10` background, `#131722` card surface) and applied it to `AndroidManifest.xml`.
-- **Root Cause 2 (Missing Compose Theme):** In `MainActivity.kt`, wrapped the app in `DelyntoTheme` using `darkColorScheme`, ensuring all text, containers, and icons resolve proper contrast.
-- **Root Cause 3 (Synchronous JNI UI Thread Blocking):** Moved `NativeBridge.initialize(...)` and native event loop dispatching off `Dispatchers.Main` onto `Dispatchers.IO` coroutine context to prevent UI thread freezes during startup.
-- **Root Cause 4 (Uninitialized Screen State):** Added `isEngineInitializing` state with an executive branded loading screen (Delynto logo, company attribution, and spinner) during native engine boot.
+### 1. QUELRAVO MultiLink Redesign & UI/UX Defect Rectification
+- **Hero Section Overhaul:** Fixed contrast issues across both themes. Heading "QUELRAVO MultiLink", subheading "One Connection. Multiple Ways to Transfer.", and description "Connect your devices through the method that works best for you." Secondary corporate attribution pill.
+- **Unified 6-Card System:** Every card shares an identical component layout, background, border, corner radius (18px), and padding. Removed all repetitive question mark help circles in favor of a single clear action button per card.
+- **Truthful Availability & Implementation Statuses:**
+  - Wi-Fi / Hotspot: Available (Recommended for local wireless).
+  - USB Tethering: Available / Requires Setup (Recommended for direct physical cable transfer).
+  - USB Cable: Experimental / Direct Cable (Tethering recommended for immediate transfer).
+  - Bluetooth: Requires Setup (Offline fallback for light documents & photos).
+  - Wi-Fi Direct: Requires Setup (Direct wireless peer-to-peer; mobile hotspot recommended).
+  - Internet Relay: In Standby (Zero-cloud remote standby; public infrastructure in standby).
+- **Speed Claim Rectification:** Removed unverified theoretical speed numbers (e.g. 1.2 Gbps, 5.0 Gbps). Replaced with honest qualitative throughput tiers (`Local Wireless · High-Speed`, `Direct Hardware · Maximum Cable Speed`, etc.). Real speeds are measured and displayed dynamically during live transfers.
+- **Focused Bottom Section:** Replaced raw diagnostic terminology with an active connection status card and setup guidance box. Advanced adapter metrics remain accessible in Settings.
 
-### 2. Android APK v2 Cryptographic Signature Fix
-- In `apps/android/app/build.gradle.kts`, the `release` build type was missing `signingConfig = signingConfigs.getByName("debug")`.
-- Production APK is now cryptographically signed and passes `apksigner verify --verbose` with Scheme v2 active, allowing immediate installation on physical devices without package parse errors.
+### 2. Mobile Blank Screen Defect (P0) & APK Signing
+- Fixed application startup failure on Android devices. Created native `Theme.Delynto` (`#090B10` background, `#131722` surface) in `themes.xml` and applied it in `AndroidManifest.xml`. Wrapped the entire Compose tree in `DelyntoTheme` with explicit `MaterialTheme` dark tokens. Offloaded JNI initialization and event polling to background `Dispatchers.IO` coroutine context. Added an initial branded loading screen to ensure zero black frames during cold boot.
+- Android APK v2 signature verified using `apksigner verify --verbose` (Scheme v2: true).
 
-### 3. Desktop UI/UX Parity & Screen Void Elimination
-- **Nearby Devices View:** Added an integrated Quick Share dropzone and QUELRAVO MultiLink guidance tips below discovered device cards to seamlessly occupy high-resolution desktop viewports.
-- **MultiLink View:** Added Hardware Diagnostics & Adapter Architecture card providing real-time hardware capabilities, zero-cloud indicators, and adapter telemetry.
-- **Settings View:** Added a dedicated Default Downloads Directory configuration card to General preferences with direct folder opening.
-
-### 4. Preserved Cryptographic Invariants
+### 3. Preserved Cryptographic Invariants
 - `crates/relaymesh-identity/src/keypair.rs` untouched and verified:  
   SHA-256: `72E7EAA278F922CACF7C1BE8909BF6E339CB08F4A3A3555E7CD548ED730D00C0`.
 

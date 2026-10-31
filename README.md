@@ -49,7 +49,7 @@ Download the official production packages for your operating system. All downloa
         <b>Package:</b> <code>Delynto-0.2.1-Setup.exe</code><br/>
         <b>Version:</b> <code>v0.2.1</code> (Production Reliability & Parity)<br/>
         <b>Architecture:</b> <code>x86_64</code> (64-bit Intel / AMD)<br/>
-        <b>File Size:</b> 11,629,962 bytes (~11.09 MiB)<br/>
+        <b>File Size:</b> 11,639,483 bytes (~11.10 MiB)<br/>
         <b>Format:</b> NSIS Standalone Installer<br/>
         <b>Requirements:</b> Windows 10 (Build 19041+) or Windows 11<br/>
         <br/>
@@ -65,7 +65,7 @@ Download the official production packages for your operating system. All downloa
         <b>Package:</b> <code>Delynto-0.2.1.apk</code><br/>
         <b>Version:</b> <code>v0.2.1</code> (Signed v2 Scheme)<br/>
         <b>Supported ABIs:</b> <code>arm64-v8a</code>, <code>x86_64</code><br/>
-        <b>File Size:</b> 27,647,094 bytes (~26.37 MiB)<br/>
+        <b>File Size:</b> 27,647,738 bytes (~26.37 MiB)<br/>
         <b>Format:</b> Android Application Package (APK)<br/>
         <b>Requirements:</b> Android 8.0 Oreo (API 26) or newer<br/>
         <br/>
@@ -81,8 +81,8 @@ Verify the cryptographic authenticity of your download prior to execution:
 
 | Binary Asset | Exact File Size | Cryptographic SHA-256 Hash |
 | :--- | :--- | :--- |
-| **`Delynto-0.2.1-Setup.exe`** | 11,629,962 bytes | `86d1cf38657f1d57185fbcd5201b4b0841d5cf324b3133b2670bf99624d14830` |
-| **`Delynto-0.2.1.apk`** | 27,647,094 bytes | `1191125786fdb68e62542242c58ad8d36b0aa64087a4e8571d663d8a9e2a4ff8` |
+| **`Delynto-0.2.1-Setup.exe`** | 11,639,483 bytes | `b9fa11523d9bfbe0200a230c3ccceb5a8a0461029e9b243620593114a8b257ff` |
+| **`Delynto-0.2.1.apk`** | 27,647,738 bytes | `689b5fd05953f8c0aa71b786252e16abeb10722e498f775bafa78e6a83832d67` |
 
 ```powershell
 # Windows PowerShell
