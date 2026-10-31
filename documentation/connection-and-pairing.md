@@ -15,6 +15,10 @@ Delynto implements zero-configuration peer discovery without central servers:
   - Android Wi-Fi and Local-Only Hotspots (`192.168.43.x` / `192.168.49.x`).
   - Offline ad-hoc mesh networks.
   - Automatically filters out loopback (`127.0.0.1`), link-local auto-config (`169.254.x.x`), and IPv6 link-local addresses.
+- **Hotspot-First Direct Probing & Reciprocal Announcements:**
+  - Android hotspots often block broadcast (`255.255.255.255`) and multicast (`239.255.0.1`) across client isolation rules.
+  - Delynto automatically probes the subnet gateway candidate (`192.168.43.1:53317`) and candidate client DHCP ranges (`.2..=25`).
+  - The discovery receiver replies with reciprocal unicast announcements directly back to the sender, guaranteeing instant bidirectional discovery.
 
 ---
 

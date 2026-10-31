@@ -17,6 +17,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.2] - 2026-10-31 — Hotspot Connectivity & UX Update
+
+### Summary
+Major connectivity and user experience release introducing **Hotspot-First Zero-Config Connectivity**, full UI decluttering across all device interaction surfaces, removal of technical diagnostic noise, and streamlined Windows ↔ Android device pairing.
+
+---
+
+### Added & Enhanced
+
+#### 📶 Hotspot-First Direct Discovery & AP Isolation Bypass
+- **Gateway Candidate Probing:** Automatically calculates default gateway candidate `((ip & netmask) | 1)` on port `53317`, enabling instant connectivity when a Windows client connects to an Android mobile hotspot (`192.168.43.1`).
+- **DHCP Client Range Sweeping:** On tethering host interfaces (`.1` on `192.168.43.0/24`, `192.168.49.0/24`, or `192.168.50.0/24`), automatically sweeps DHCP client address candidates (`.2..=25`) over UDP.
+- **Reciprocal Unicast Announcements:** When receiving a discovery packet from a new or updated peer, the discovery receiver immediately sends a reciprocal unicast announcement back to the sender, ensuring bidirectional discovery even when router AP isolation drops multicast/broadcast packets.
+
+#### 🎨 Redesigned Devices Experience & UI Cleanup
+- **Decluttered Devices View:** Eliminated technical noise (RelayMesh port badges, STUN candidate counts, LAN host badges, route probing buttons, and raw cryptographic fingerprints).
+- **Clean Device Cards:** Displays only essential information: device icon, friendly name, platform, online status, and primary action buttons (**Send Files** for trusted peers, **Connect** for new peers).
+- **Secondary Modals:** Streamlined Direct IP modal and QR pairing modals accessible without cluttering the primary device list.
+- **Hotspot-First Guidance:** Empty state provides actionable, friendly guidance: *"Connect both devices to the same Wi-Fi network. Using your phone's hotspot? Turn it on and connect your PC to it."*
+- **Platform Scope Standardized:** Removed mock/unsupported platforms (Mac/Linux); standardized strictly on Windows & Android across navigation, modals, and device lists.
+
+#### 📦 Distribution Artifacts
+- Fresh Windows NSIS Installer: `Delynto-0.1.2-Setup.exe` (11,634,858 bytes, SHA-256: `efb3ff7a6ed1466faa97d77752a45855fd2147b99748aed7acf4a09110aa152f`).
+- Verified Android APK: `Delynto-0.1.2.apk` (27,415,905 bytes, SHA-256: `ae4e3a9029ef7a82bfa0e2336864492e1e68e5b44187aee1b819903854c1780b`).
+
+---
+
 ## [0.1.1] - 2026-10-30 — Stability & Connectivity Update
 
 ### Summary
